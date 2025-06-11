@@ -1,0 +1,104 @@
+.map-info {
+  position: relative;
+  height: var(--total-height);
+
+  &-bg {
+    position: sticky;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100dvh;
+  }
+
+  &-pic {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &-img {
+    height: 100%;
+    object-position: top;
+
+    &.second {
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &-card1 {
+    position: absolute;
+
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    @include mpc {
+      align-items: flex-end;
+      padding: 0 95px;
+    }
+  }
+
+  &-card2 {
+    position: absolute;
+
+    top: var(--topSpace2);
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    @include mpc {
+      align-items: flex-end;
+      padding: 0 95px;
+    }
+  }
+
+  &-card3 {
+    position: absolute;
+
+    top: var(--topSpace3);
+    display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    @include mpc {
+      align-items: flex-end;
+      padding: 0 95px;
+    }
+  }
+
+  &-content {
+    color: #404040;
+    background-color: rgb(255 255 255 / 95%);
+    padding: 40px 10px;
+
+    @include mob {
+      padding: 30px 26px;
+    }
+
+    @include pad {
+      width: 100%;
+      height: max-content;
+      max-width: 768px;
+      padding: 40px 30px;
+    }
+    @include pc {
+    }
+  }
+
+  &-text {
+    font-size: 18px;
+    line-height: 36px;
+
+    text-align: justify;
+  }
+}

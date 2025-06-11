@@ -1,0 +1,75 @@
+.inner-voice {
+  position: relative;
+  height: var(--total-height);
+
+  &-bg {
+    position: sticky;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100dvh;
+  }
+
+  &-pic {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  &-img {
+    height: 100%;
+    object-position: top;
+
+    &.second {
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &-card {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    @include mpc {
+      align-items: flex-end;
+      padding: 0 95px;
+    }
+
+    &-half {
+      top: 50dvh;
+      transform: translateY(-50%);
+    }
+  }
+
+  &-content {
+    padding: 30px 20px;
+
+    max-width: 530px;
+    width: 100%;
+    height: max-content;
+
+    color: #fff;
+
+    background-color: rgb(00 00 00 / 70%);
+
+    @include mob {
+      padding: 30px 26px;
+    }
+
+    @include pad {
+      padding: 40px 30px;
+    }
+  }
+
+  &-text {
+    font-size: 18px;
+    line-height: 36px;
+
+    text-align: justify;
+  }
+}
