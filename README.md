@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# rewritevue
+=======
+>>>>>>> 26de1d0 (functional)
 # 大林蒲二部曲
 
 ## 🔗正式機網址
@@ -17,3 +23,7 @@ pnpm i
 ```
 pnpm dev
 ```
+<<<<<<< HEAD
+=======
+>>>>>>> 32ff963 (Initial commit)
+>>>>>>> 26de1d0 (functional)
